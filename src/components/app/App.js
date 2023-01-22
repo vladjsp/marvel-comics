@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import AppHeader from '../appHeader/AppHeader';
-import RandomChar from '../randomChar/RandomChar';
-import CharList from '../charList/CharList';
-import CharInfo from '../charInfo/CharInfo';
-import ErrorBoundary from '../errorBoundary/ErrorBoundary';
+// import RandomChar from '../randomChar/RandomChar';
+// import CharList from '../charList/CharList';
+// import CharInfo from '../charInfo/CharInfo';
+// import ErrorBoundary from '../errorBoundary/ErrorBoundary';
+
+import ComicsList from '../comicsList/ComicsList';
 
 import decoration from '../../resources/img/vision.png';
 
@@ -18,7 +20,8 @@ const App = () => {
     <div className='app'>
       <AppHeader />
       <main>
-        <ErrorBoundary>
+        {
+          /* <ErrorBoundary>
           <RandomChar />
         </ErrorBoundary>
 
@@ -34,7 +37,9 @@ const App = () => {
           className='bg-decoration'
           src={decoration}
           alt='vision'
-        />
+        /> */
+          <ComicsList />
+        }
       </main>
     </div>
   );
