@@ -1,4 +1,4 @@
-import ErrorMessage from '../errorMessage/ErrorMessage';
+import ErrorMessage from '../components/errorMessage/ErrorMessage';
 import { Link } from 'react-router-dom';
 
 const Page404 = () => {
@@ -16,8 +16,7 @@ const Page404 = () => {
           fontSize: '24px',
           marginTop: '30px',
         }}
-        to='/'
-      >
+        to='/'>
         Back to main page
       </Link>
     </div>

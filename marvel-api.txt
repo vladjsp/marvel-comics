@@ -1,7 +1,0 @@
-Hi diffsu319245902!
-
-Here's your personal Marvel Comics API information:
-Your public key
-c6478a71351fec72321e96045044eb18
-Your private key
-61a5c71af2e43ba826d8d1580c24b76d079dbb01

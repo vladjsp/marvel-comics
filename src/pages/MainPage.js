@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import RandomChar from '../randomChar/RandomChar';
-import CharList from '../charList/CharList';
-import CharInfo from '../charInfo/CharInfo';
-import ErrorBoundary from '../errorBoundary/ErrorBoundary';
+import RandomChar from '../components/randomChar/RandomChar';
+import CharList from '../components/charList/CharList';
+import CharInfo from '../components/charInfo/CharInfo';
+import ErrorBoundary from '../components/errorBoundary/ErrorBoundary';
 
-import decoration from '../../resources/img/vision.png';
+import decoration from '../resources/img/vision.png';
 
 const MainPage = () => {
   const [selectedChar, setChar] = useState(null);
@@ -27,11 +27,7 @@ const MainPage = () => {
           <CharInfo charId={selectedChar} />
         </ErrorBoundary>
       </div>
-      <img
-        className='bg-decoration'
-        src={decoration}
-        alt='vision'
-      />
+      <img className='bg-decoration' src={decoration} alt='vision' />
     </>
   );
 };
